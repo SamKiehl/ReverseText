@@ -10,7 +10,7 @@ function reverse(){
     }
     if(s != "")
         count++;
-    if(count === MAX_RETURNS){
+    if(count >= MAX_RETURNS){
         returned.innerHTML += `<p><b> Full! Please hit "Clear". </b></p>`;
         alert('Full! Please hit "Clear".');
     }
@@ -23,5 +23,5 @@ function reverse(){
 function clearR(){
     returned.innerHTML = "";
     count = 0;
-    console.log("Results have been reset.")
+    console.log("Results have been cleared.")
 }
