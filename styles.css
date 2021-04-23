@@ -25,13 +25,7 @@ h1{
     border-radius: 5%;
 }
 body{
-    background: transparent;
-    background-size: 100%;
-    height: 0%;
-}
-#all{
     background: url('images/stars_milky_way_space_116893_1920x1080.jpg') no-repeat center;
-    height: 1080px;
-    width: 1920px;
-    align-items: center;
+    background-size: 100%;
+    height: 860px;
 }
