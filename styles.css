@@ -1,0 +1,28 @@
+#main{
+    color: white;
+    align-items: center;
+    text-align:center;
+}
+#result{
+    color: white;
+    background-color: black;
+    margin: auto;
+    max-width: 20%;
+    height: 200px;
+    border-radius: 24px;
+}
+h1{
+    background-color: black;
+    margin: auto;
+    margin-top: 25px;
+    height: 40px;
+    max-width: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5%;
+}
+body{
+    background: url('images/stars_milky_way_space_116893_1920x1080.jpg') no-repeat center;
+    background-size: 1920px 1080;
+}
