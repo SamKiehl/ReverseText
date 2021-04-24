@@ -10,11 +10,11 @@ function reverse(){
     }
     if(s != "")
         count++;
-    if(count >= MAX_RETURNS){
+    if(count > MAX_RETURNS){
         returned.innerHTML += `<p><b> Full! Please hit "Clear". </b></p>`;
         alert('Full! Please hit "Clear".');
     }
-    if(count < MAX_RETURNS && s != ""){
+    if(count <= MAX_RETURNS && s != ""){
         console.log(output);
         returned.innerHTML += `<p id='para${count}'>${count}.) ${output} </p>`;
         console.log("Success");
