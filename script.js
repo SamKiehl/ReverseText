@@ -1,12 +1,4 @@
 let count = 0;
-document.getElementById("reverse").addEventListener("keyup", function(event) {
-    if (event.keyCode === 13) {
-      // Cancel the default action, if needed
-      event.preventDefault();
-      // Trigger the button element with a click
-      document.getElementById("myBtn").click();
-    }
-  });
 
 function reverse(){
     const MAX_RETURNS = 20;
