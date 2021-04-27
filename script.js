@@ -1,5 +1,6 @@
 let count = 0;
 const MAX_RETURNS = 20;
+let isFull = false;
 
 function reverse(){
     let s = document.querySelector("input").value;
@@ -12,11 +13,13 @@ function reverse(){
     if(s != "")
         count++;
 
-    if(count >= MAX_RETURNS){
+    if(count >= MAX_RETURNS && !isFull){
         returned.innerHTML += `<p><b> Full! Please hit "Clear". </b></p>`;
         alert('Full! Please hit "Clear".');
+        isFull = true;
     }
-    if(count <= MAX_RETURNS && s != ""){
+
+    if(count < MAX_RETURNS && s != ""){
         console.log(output);
         returned.innerHTML += 
         `
@@ -32,6 +35,7 @@ function reverse(){
 function clearR(){
     returned.innerHTML = "";
     count = 0;
+    isFull = false;
     console.log("Results have been cleared.")
 }
 
@@ -41,13 +45,14 @@ function shuffleLetters(){
     if(s != "")
         count++;
 
-    if(count >= MAX_RETURNS){
+    if(count >= MAX_RETURNS && !isFull){
+        isFull = true;
         returned.innerHTML += `<p><b> Full! Please hit "Clear". </b></p>`;
         alert('Full! Please hit "Clear".');
     }
      output = shuffle(s);
 
-    if(count <= MAX_RETURNS && s != ""){
+    if(count < MAX_RETURNS && s != ""){
         console.log(output);
         returned.innerHTML += 
         `
