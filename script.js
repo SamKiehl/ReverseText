@@ -22,7 +22,7 @@ function reverse(){
         `
             <p>
                 >\t${output}\t
-                <button class = "remove" onclick = "setup();">[X]</button>
+                <button class = "remove" onclick = "setup();">X</button>
             </p>
         `
         console.log("Success");
